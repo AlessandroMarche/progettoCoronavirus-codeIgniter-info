@@ -2,6 +2,7 @@
 <html>
 <title>Progetto coronavirus</title>
 <link rel="stylesheet" href="<?= base_url('/assets/css/bootstrap.min.css') ?>">
+<link rel="script" href="<?= base_url('/assets/js/bootstrap.min.js') ?>">
 <link rel="icon" href="<?= base_url('/assets/images/logo.png') ?>">
 
 <body>
@@ -15,8 +16,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <?= anchor('go/index', "Home", 'class="nav-link"') ?>
+                </li>
+                <li class="nav-item">
+                    <?= anchor('storico/index', "Storico", 'class="nav-link"') ?>
                 </li>
             </ul>
         </div>
