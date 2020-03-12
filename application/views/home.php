@@ -10,8 +10,8 @@
             <h4>Andamento nazionale</h4>
         </div>
         <div class="card-body">
-            <h5 class="card-title">Dati aggiornati il: </h5>
-            
+            <h5 class="card-title">Dati aggiornati il <?= date("d/m/Y", strtotime($nationalTrend->data)) ?> alle <?= date("H:i", strtotime($nationalTrend->data)) ?> </h5>
+
         </div>
     </div>
 </div>

@@ -1,7 +1,7 @@
-<footer class="page-footer font-small fixed-bottom">
+<footer class="page-footer font-small">
 
     <div class="footer-copyright text-center py-3">© 2020 Copyright:
-        Alessandro Marcherr - 5AII
+        Alessandro Marchetti - 5AII
     </div>
 
 </footer>
