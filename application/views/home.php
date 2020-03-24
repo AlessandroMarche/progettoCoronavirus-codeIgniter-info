@@ -78,7 +78,7 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-4 text-center">
-                        <a href="<?=base_url('index.php/storico/nazionale')?>">
+                        <a href="<?= base_url('index.php/storico') ?>">
                             <button type="button" class="btn btn-outline-info">Vedi storico</button>
                         </a>
                     </div>
