@@ -4,27 +4,27 @@
 
     <div class="container mt-5">
         <div class="row justify-content-center">
-            <div class="col-4">
-                <h2 class="font-weight-bold">STORICO NAZIONALE</h2>
+            <div class="col-10">
+                <h2 class="font-weight-bold text-center">DATI REGIONE: <?= $regione ?></h2>
             </div>
         </div>
     </div>
 
+    <!--
+    AGGIORNA DB REGIONALE
     <?php if ($haveBeenUpdated == true) { ?>
         <div class="alert alert-success alert-dismissible fade show mt-5" role="alert">
             <strong>Successo!</strong> I tuoi dati nel database in locale non erano aggiornati: ora lo sono!
         </div>
     <?php } ?>
+    -->
 
-    <div class="alert alert-primary mt-5 text-center" role="alert">
-        <strong>Consiglio: </strong>disattiva le linee cliccando il riquadro nella leggenda per vedere più dettagli.
-    </div>
     <canvas id="nationalChart" class="mt-5 mb-3"></canvas>
 
     <script>
-        localStorage.setItem('nationalDatas', `<?= $json ?>`)
+        localStorage.setItem('regionalData', `<?= $json ?>`)
     </script>
-    <script src="<?= base_url('/scripts/storico.js') ?>"></script>
+    <script src="<?= base_url('/scripts/storicoRegionale.js') ?>"></script>
 
     <?php foreach ($dati as $dato) { ?>
         <div class="card mt-5">

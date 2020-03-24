@@ -10,6 +10,9 @@
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
     <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 
+    <script src="https://kit.fontawesome.com/1474d90574.js" crossorigin="anonymous"></script>
+
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
         <a class="navbar-brand" href="<?= base_url('/index.php/go/index') ?>">
             <img src="<?= base_url('/assets/images/logo.png') ?>" width="60" height="60" class="d-inline-block align-center ml-3" alt="">
@@ -27,7 +30,10 @@
                     <?= anchor('mappa/index', "Mappa", 'class="nav-link"') ?>
                 </li>
                 <li class="nav-item">
-                    <?= anchor('storico/index', "Storico", 'class="nav-link"') ?>
+                    <?= anchor('storico/nazionale', "Nazionale", 'class="nav-link"') ?>
+                </li>
+                <li class="nav-item">
+                    <?= anchor('storico/regionale', "Regionale", 'class="nav-link"') ?>
                 </li>
             </ul>
         </div>
